@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 1000px;
+            background-color: #e0e0e0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .img1{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+        }
+        .box2{
+            width: 1000px;
+            background-color: #e0e0e0;
+        }
+        .img2{
+            width: 200px;
+            height: 200px;
+            margin: 0 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1、块元素中的行内元素或者行内块居中，给外部的这个块元素设置text-align:center;
+        2、块元素在父级元素中水平居中，给这个块元素设置margin:0 auto;
+     -->
+    <div class="box">
+        <span style="background-color: yellow;">文本</span> <br>
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0b8cffcbdaa88e2a314f0a372ca75dd.jpg?w=468&h=600" alt="" class="img1">
+        <div class="box1"></div>
+    </div>
+
+    <div class="box2">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0b8cffcbdaa88e2a314f0a372ca75dd.jpg?w=468&h=600" alt="" class="img2">
+    </div>
+</body>
+</html>

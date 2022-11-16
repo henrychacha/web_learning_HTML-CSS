@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 100px 80px 120px;
+            grid-template-rows: 50px 100px 150px;
+        }
+        .container div{
+            border:1px solid black;
+        }
+        .container1{
+            /* grid-template-columns: 33.33% 33.33% 33.33%; */
+            grid-template-columns: repeat(3,33.33%);
+            grid-template-rows: repeat(3,33.33%);
+        }
+        .container2{
+           /*  grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+ */
+            grid-template: repeat(3,1fr)/1fr 2fr 1fr;
+        }
+
+        .container3{
+            display: grid;
+            height: 200px;
+            background-color: pink;
+            grid-template-columns: 1fr 1fr minmax(200px,1fr);
+
+        }
+        .container3 div{
+            border:1px solid black;
+        }
+
+        .container4{
+            display: grid;
+            height: 200px;
+            grid-template-columns: 100px auto 200px;
+        }
+        .container4 div:first-child{
+            background-color: red;
+        }
+        .container4 div:nth-child(2){
+            background-color: green;
+        }
+        .container4 div:nth-child(3){
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container container1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container container2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="container4">
+        <div>left</div>
+        <div>center</div>
+        <div>right</div>
+    </div>
+</body>
+</html>

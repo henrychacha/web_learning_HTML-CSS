@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show-box{
+            width: 1000px;
+            height: 160px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .img-box{
+            position: relative;
+            left: 0;
+            top:0;
+            width: 2000px;
+            font-size: 0px;
+            animation: img-move 4s linear infinite;
+        }
+        .img-box img{
+            width: 200px;
+            height: 160px;
+        }
+
+        @keyframes img-move {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: -1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="show-box">
+        <div class="img-box">
+            <img src="http://www.ujiuye.com/uploadfile/2020/0109/20200109112917912.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1A638695962XRAI.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1A1555164830J0B.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2003/QuanGuo/F3D594472808XP0L.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1J611221856LMMH.jpg" alt="">
+            <img src="http://www.ujiuye.com/uploadfile/2020/0109/20200109112917912.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1A638695962XRAI.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1A1555164830J0B.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2003/QuanGuo/F3D594472808XP0L.jpg" alt="">
+            <img src="http://xue.ujiuye.com/uploads_it/2001/QuanGuo/F1J611221856LMMH.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+
+.header{
+    width: 1134px;
+    margin: 0 auto;
+    height: 57px;
+    line-height: 57px;
+    /* background-color: aquamarine; */
+
+}
+.header h1{
+    float: left;
+    margin-left: 10px;
+}
+.header .nav-right{
+    float: right;
+    margin-right: 160px;
+    font-size: 14px;
+}
+.header .nav-right a{
+    color: #666;
+    text-decoration: none;
+}
+.header .nav-right a img{
+    margin: 0 5px;
+}

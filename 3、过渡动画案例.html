@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: relative;
+            width: 680px;
+            height: 380px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .box img{
+            width: 680px;
+            height: 380px;
+            transition: transform 0.2s linear;
+        }
+        .border{
+            position: absolute;
+            left: -3px;
+            top: -3px;
+            width: 680px;
+            height: 380px;
+            border: 3px solid #fff;
+            transition: transform 0.2s linear;
+        }
+
+        .box:hover img{
+            transform:scale(1.1);
+            transition: transform 1s linear;
+        }
+        .box:hover .border{
+            transform:scale(0.95,0.9);
+            /* transition: transform 0.2s linear; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="http://asset.ibanquan.com/s/30611/727/index_global3_pic_1?v=1568268246_1582015991" alt="">
+        <div class="border"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            width: 200px;
+            background-color: red;
+            white-space: nowrap;/* 文本强制不换行 */
+            text-overflow:ellipsis;  /* 文本溢出显示省略号 */
+            overflow: hidden; /* 必须要结合盒子溢出隐藏 */
+        }
+
+        .p2{
+            width: 200px;
+            background-color: royalblue;
+            overflow: hidden; /* 必须要结合盒子溢出隐藏 */
+            text-overflow: ellipsis;/* 文本溢出显示省略号 */
+            display: -webkit-box;  /* 必须要结合的属性，讲元素设置为弹性盒模式 */
+            -webkit-line-clamp: 4;  /*  必须要结合的属性，设置文本显示的行数 */
+            -webkit-box-orient: vertical;  /*  必须要结合的属性，设置弹性盒对象的子元素，排列方式为垂直 */
+        }
+
+        .p3{
+            position: relative;
+            width: 240px;
+            height: 90px;/* 盒子高度要设置为line-height的倍数  （表示要显示的行数） */
+            background-color: gold;
+            line-height: 30px;
+            overflow: hidden;
+        }
+        .p3::after{
+            position: absolute; /* 通过定位设置到父元素的右下角 */
+            right:0;
+            bottom: 0;
+            content: '...';  /* 伪元素添加 ... 显示省略号 */
+            /* background-color: gold; */
+            padding-left: 20px;
+            background: linear-gradient(to right,transparent,gold 60%) ;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="p1">使用了粉碎高品质的天草陶石后提炼而成的</p>
+
+    <p class="p2">使用了粉碎高品质的天草陶石炼而成而成的土，制作了泛着淡青色的白瓷。用餐时可以记住食品名称、体会新鲜口味···可对颜色和口味、气味、口感逐个品味，从中感受用</p>
+
+    <p class="p3">
+        使用了粉碎高品质的天草陶提炼而成的土，制作了作了泛着淡青色的白瓷。用餐时可以记住食品名称、体会新鲜口味···可对颜色和口味、气味、口感逐个品味，从中感受用
+    </p>
+
+
+
+
+
+</body>
+</html>

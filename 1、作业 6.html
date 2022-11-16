@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 240px;
+            height: 395px;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+        }
+
+        .box img {
+            width: 240px;
+            height: 335px;
+        }
+
+        .box p {
+            line-height: 60px;
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        .box p span {
+            float: right;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        .box .cover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 240px;
+            height: 335px;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: none;
+            /* 隐藏 */
+        }
+
+        .box .cover .txt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* background-color: brown; */
+            padding: 15px;
+            color: #fff;
+        }
+
+        .box:hover .cover {
+            display: block;
+        }
+
+        .box:hover {
+            box-shadow: 0px 0px 20px #b0b0b0;
+        }
+
+
+        body{
+            background-color: #e0e0e0;
+        }
+        /* nav-aside */
+        .nav-aside{
+            position: fixed;
+            top: 100px;
+            right: 100px;
+            list-style: none;
+            width: 58px;
+            background-color: #fff;
+        }
+        .nav-aside li{
+           position: relative;
+           padding: 10px; 
+           /* height: 38px; */
+           line-height: 19px;
+           font-size: 14px;
+           text-align: center;
+           color: #666;
+           /* margin: 0 10px; */
+           /* background-color: pink; */
+           /* border-bottom: 1px solid #b0b0b0; */
+        }
+        .nav-aside li i{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #999;
+        }
+        .nav-aside li::after{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            content: '';
+            display: block;
+            height: 1px;
+            width: 38px;
+            background-color: #e0e0e0;
+            
+        }
+        
+        
+        .nav-aside .last::after{
+            height: 0;
+        }
+
+        
+       /*  .nav-aside li.active{
+            color: crimson;
+        } */
+        .nav-aside li:hover{
+            background-color: crimson;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="http://www.ujiuye.com/uploadfile/2019/0520/20190520111312735.jpg" alt="">
+        <p>马老师 <span>优就业Java研究院院长</span></p>
+        <div class="cover">
+            <div class="txt">
+                7年JavaEE开发经验，5年教学经验，高级Java工程师、高级Java讲师。曾参与开发了省公安厅内部...
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <img src="http://www.ujiuye.com/uploadfile/2019/0520/20190520111312735.jpg" alt="">
+        <p>马老师 <span>优就业Java研究院院长</span></p>
+        <div class="cover">
+            <div class="txt">
+                7年JavaEE开发经验，5年教学经验，高级Java工程师、高级Java讲师。曾参与开发了省公安厅内部...
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <img src="http://www.ujiuye.com/uploadfile/2019/0520/20190520111312735.jpg" alt="">
+        <p>马老师 <span>优就业Java研究院院长</span></p>
+        <div class="cover">
+            <div class="txt">
+                7年JavaEE开发经验，5年教学经验，高级Java工程师、高级Java讲师。曾参与开发了省公安厅内部...
+            </div>
+        </div>
+    </div>
+    <ul class="nav-aside">
+        <li>京东秒杀</li>
+        <li>特色优选</li>
+        <li>频道广场</li>
+        <li>为您推荐</li>
+        <li><i></i><br>客服</li>
+        <li><i></i><br>反馈</li>
+        <li class="last"><i></i><br>顶部</li>
+    </ul>
+</body>
+
+</html>

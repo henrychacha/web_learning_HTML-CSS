@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 270px;
+            list-style: none;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        ul li{
+            line-height: 40px;
+        }
+        ul li a{
+            color: #666;
+            text-decoration: none;
+        }
+        ul li a span{
+            font-size: 0.8em;
+        }
+
+        ul li a i{
+            width:16px;
+            height: 18px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 15px 0 23px;
+            background: url("http://www.ujiuye.com/statics/images/images/nav_left.png") no-repeat;
+        }
+
+        ul li:hover{
+            border-left: 2px solid orangered;
+            margin-left: -2px;
+        }
+        ul li.item02 i{
+            background-position: -40px 0px;
+        }
+        ul li.item03 i{
+            background-position: -63px 0px;
+        }
+        ul li.item04 i{
+            background-position: -85px 0px;
+        }
+
+        ul li.item01:hover i{
+            background-position: -41px -41px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="item01">
+            <a href="#"> <i></i> 互联网营销</a>
+        </li>
+        <li class="item02">
+            <a href="#"> <i></i> 全链路UI/UE设计</a>  
+        </li>
+        <li class="item03">
+            <a href="#"> <i></i> 大前端 <span>(H5+小程序+服务器渲染)</span></a>
+        </li>
+        <li class="item04">
+            <a href="#"> <i></i> Java开发</a>
+        </li>
+    </ul>
+</body>
+</html>

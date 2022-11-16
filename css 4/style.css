@@ -1,0 +1,52 @@
+/* css注释 */
+.box {
+  width: 100px;
+  height: 200px;
+  background-color: #f00;
+}
+.box1 {
+  width: 100px;
+  height: 200px;
+  background-color: red;
+}
+.box2 {
+  box-shadow: 0px 0px 5px 10px #333;
+}
+.header {
+  height: 50px;
+  background-color: #333;
+}
+.header .left {
+  float: left;
+}
+.header .left ul {
+  list-style: none;
+}
+.header .left ul li {
+  float: left;
+}
+.header .left ul li a {
+  color: red;
+}
+.header .left ul li a:hover {
+  color: #fff;
+}
+.header .left ul li.first {
+  margin-left: 0px;
+}
+.header .right {
+  float: right;
+}
+.size1,
+.box3 {
+  width: 100px;
+  height: 100px;
+}
+.box3 {
+  background-color: red;
+}
+.box4 {
+  width: 200px;
+  height: 142.85714286px;
+  border-width: calc(1000 / 5px);
+}

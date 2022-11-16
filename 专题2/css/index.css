@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header{
+    width: 1134px;
+    margin: 0 auto;
+    height: 57px;
+    line-height: 57px;
+    /* background-color: aquamarine; */
+
+}
+.header h1{
+    float: left;
+    margin-left: 10px;
+}
+.header .nav-right{
+    float: right;
+    margin-right: 160px;
+    font-size: 14px;
+}
+.header .nav-right a{
+    color: #666;
+    text-decoration: none;
+}
+.header .nav-right a img{
+    margin: 0 5px;
+}
+/* banner */
+.banner{
+    height: 282px;
+    background-color: #e4462f;
+    text-align: center;
+}
+/* 主导航 nav-main */
+.nav-main{
+    height: 80px;
+    background: url("../images/nav-main-bg.jpg");
+}
+.wrap{
+    width: 1220px;
+    margin: 0 auto;
+}
+.nav-main .month{
+    float: left;
+    line-height: 80px;
+    height: 80px;
+    width: 234px;
+    background-color: #e4462f;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+.nav-main .month span{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.nav-main .txt{
+    float: left;
+}
+.nav-main ol{
+    float: left;
+}
+.nav-main ul{
+    float: right;
+}
+.nav-main .txt{
+    line-height: 80px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 26px;
+}
+.nav-main ol{
+    height: 80px;
+    background: url("../images/nav-ol-bg.jpg");
+}
+.nav-main ol li{
+    float: left;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 33px;
+    margin-top: 22px;
+    margin-left: 16px;
+}
+.nav-main ol li:hover{
+    background-color: #e4462f;
+    color: #fff;
+}
+.nav-main ol .first{
+    margin-left: 0;
+}
+.nav-main ul li{
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-left: 1px solid #818181;
+}
+.nav-main ul .last{
+    border-right:1px solid #818181;
+}

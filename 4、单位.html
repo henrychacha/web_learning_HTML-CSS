@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 50px;
+        }
+
+        .box{
+            font-size: 40px;   /* 1em = 40px */
+            width: 10em;  /* 400px */
+            height: 10em;   /* 400px */
+            background-color: red;
+        }
+        .child{
+            font-size: 20px; /* 1em = 20px */
+            width: 10em;  /* 200px */
+            height: 10em;  /* 200px */
+            background-color: yellow;
+            line-height: 2em;
+        }
+        .box1{
+            /* cm ,  mm可以使用，但是不常用 */
+            width: 20cm;
+            height: 200mm;
+            background-color: blue;
+        }
+        .inner{
+            width: 50%;
+            height: 50%;
+            background-color: chartreuse;
+        }
+
+        .box2{
+            font-size: 100px;
+            width: 2rem;
+            height: 2rem;
+            background-color: cornflowerblue;
+        }
+        .box3{
+            width: 3rem;
+            height: 3rem;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+    <div class="box1">
+        <div class="inner"></div>
+
+    </div>
+
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-box{
+    width: 400px;
+    /* background-color: #e0e0e0; */
+    margin: 0 auto;
+}
+.form-box h2{
+    font-weight: normal;
+    color: #30973e;
+    font-size: 20px;
+    line-height: 40px;
+}
+.form-box h2 img{
+    width: 160px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.form-box h3{
+    font-size: 20px;
+    line-height: 2;
+}
+.form-box .group{
+    margin-top: 15px;
+}
+.form-box .group span{
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.form-box .group input{
+    width: 240px;
+    height: 32px;
+    border: none;
+    border: 1px solid #999;
+}
+.form-box .group i{
+    color: #999;
+    font-size: 12px;
+    font-style: normal;
+}
+.form-box .group i b{
+    color: #000;
+    font-weight: normal;
+}
+.form-box .group i a{
+    color: blue;
+    text-decoration: none;
+}
+.form-box .group .tel-box{
+    display: inline-block;
+    width: 240px;
+    height: 32px;
+    border: 1px solid #999;
+}
+.form-box .group .tel-box i{
+    padding: 0 10px;
+    border-right: 1px solid #b0b0b0;
+    color: #666;
+}
+.form-box .group .tel-box input{
+    border: none;
+    width: 180px;
+    height: 30px;
+}
+.form-box .group7 i{
+    display: inline-block;
+    width: 300px;
+}
+.form-box .group .inp8{
+    width: 110px;
+
+}
+.form-box .group .btn{
+    width: 85px;
+    background-color: #fff;
+}
+.form-box .group .submit{
+    width: 80px;
+    border: none;
+    background-color:#30973e ;
+    color: #fff;
+}
+
+.form-box .item span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.form-box .item span i{
+    color: red;
+}
+.form-box .item .checkboxs{
+    display: inline-block;
+    width: 250px;
+    vertical-align: middle;
+}

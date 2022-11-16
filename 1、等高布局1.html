@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container{
+            width: 1000px;
+            border: 2px solid black;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .left{
+            float: left;
+            width: 300px;
+            background-color: pink;
+            padding-bottom: 9999px;
+            margin-bottom:-9999px;
+        }
+        .center{
+            float: left;
+            width: 400px;
+            background-color: lightgreen;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+        .right{
+            float: left;
+            width: 300px;
+            background-color: lightskyblue;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="left">当前正值全国齐心抗击疫情特殊时期，全国人民都在关注着疫情的进展并且身处其中，更有医护人员、社区干部及各方警力不畏困难险阻战斗在抗疫一线，快递小哥为保障民生穿梭于楼宇之间……当前正值全国齐心抗击疫情特殊时期，全国人民都在关注着疫情的进展并且身处其中，更有医护人员、社区干部及各方警力不畏困难险阻战斗在抗疫一线，快递小哥为保障民生穿梭于楼宇之间……当前正值全国齐心抗击疫情特殊时期，全国人民都在关注着疫情的进展并且身处其中，更有医护人员、社区干部及各方警力不畏困难险阻战斗在抗疫一线，快递小哥为保障民生穿梭于楼宇之间……</div>
+        <div class="center">因此，中公教育IT培训品牌优就业响应国家教育部“停课不停学”的号召，坚决遵守国家教育部“要坚持把做好疫情防控工作放在首位，维护广大师生健康安全，坚决防止疫情向校园蔓延”的要求，特携手</div>
+        <div class="right">优就业自2月3日起已在新浪教育平台推出“天天好课”“就业创造营”“青春有证”等免费直播课程，以供不同领域、不同行业、不同年龄的学员选择。在家期间，学习技能，提升自我，建立就业创业信心，优就业致力于为社会各界人士提升及职业教育发展贡献一份力量</div>
+    </div>
+</body>
+</html>

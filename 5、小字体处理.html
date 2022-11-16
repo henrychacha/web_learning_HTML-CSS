@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./remScale.js"></script>
+    <style>
+
+        .box{
+            width: 2.4rem;
+            background-color: red;
+            font-size: .18rem;
+        }
+
+
+
+        @media screen and (max-width:320px){
+            .box p{
+                width: 2.5rem;
+                transform-origin: left center;
+                transform: scale(0.95);
+            }
+        }
+    
+
+    </style>
+</head>
+<body>
+        <div class="box">
+            <p>我是一行文字 hello 我是一行</p>
+        </div>
+</body>
+</html>

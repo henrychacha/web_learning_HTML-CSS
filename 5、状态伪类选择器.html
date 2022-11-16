@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+           color: aqua; 
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color:yellow;
+        }
+        a:active{
+            color: pink;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box:hover{
+            background-color: yellow;
+        }
+
+        p{
+          width: 200px;
+          height: 200px;
+          border: 1px solid black;  
+        }
+        /* p :hover{
+            background-color: blue;
+        } */
+
+        /* p span:hover{
+            color: pink;
+        } */
+        /*
+        p:hover span{
+            color: pink;
+        }
+        p:hover a{
+            color: orangered;
+        }
+        */
+
+        /* p:hover span,p:hover a{
+            color: orangered;
+        } */
+        p:hover *{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="./作业.html" target="_blank">我是一个链接</a>
+
+    <div class="box">
+        我是一个div
+    </div>
+
+    <p>
+        <span>我是span</span>
+        <a href="#">我是a</a>
+    </p>
+</body>
+</html>

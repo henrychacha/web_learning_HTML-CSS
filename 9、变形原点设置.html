@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 600px;
+        }
+        .box{
+            
+            width: 300px;
+            height: 300px;
+            border: 5px solid yellow;
+            margin: 50px auto;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+          
+           
+        }
+        .img1{
+            transform-origin: 50% 0%;
+            transform: rotateY(45deg);
+        }
+        .img2{
+            transform-origin: top center ;
+            transform:rotateX(-45deg);
+        }
+        .img3{
+            transform-origin: left top;
+            transform:scale(0.5);
+        }
+        .img4{
+            transform-origin: right center;
+            transform:scale(2);
+        }
+        .img5{
+            transform-origin: -100px center;
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../0401/img/pic.png" alt="" class="img1">
+    </div>
+    <div class="box">
+        <img src="../0401/img/pic.png" alt="" class="img2">
+    </div>
+    <div class="box">
+        <img src="../0401/img/pic.png" alt="" class="img3">
+    </div>
+    <div class="box">
+        <img src="../0401/img/pic.png" alt="" class="img4">
+    </div>
+
+    <div class="box">
+        <img src="../0401/img/pic.png" alt="" class="img5">
+    </div>
+</body>
+</html>

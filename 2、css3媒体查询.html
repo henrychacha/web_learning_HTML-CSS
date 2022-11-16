@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        /* 视口宽度（等同于设备宽度）等于320px */
+        @media screen and (width:320px){ 
+            .box{
+                background-color: yellow;
+            }
+        }
+        /* 视口宽度大于等于414px */
+        @media screen and (min-width: 414px){
+            .box{
+                border: 2px solid black;
+            }
+        }    
+        /* 视口宽度小于等于768px */
+        @media screen and (max-width: 768px){
+            .box{
+                border-right: 10px solid limegreen;
+            }
+        }
+        /* 视口宽度大于等于360px并且小于等于414px */
+        @media screen and (min-width: 360px) and (max-width: 414px){
+            .box{
+                border-bottom: 10px solid hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            background-color: cadetblue;
+            border-top: 2px solid yellow;
+        }
+        .box::after{
+            display: block;
+            background-color: red;
+            width: 200px;
+            height: 50px;
+            content: '我是::after伪元素添加的内容';
+        }
+        .box::before{
+            border-top: 2px solid black;
+            display: block;
+            margin: 0 auto;
+            width: 100px ;
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        我是一个box
+    </div>
+</body>
+</html>

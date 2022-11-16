@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        body .box{/* 1 + 10 = 11 */
+            /* background-color: green; */
+        }
+        div.box{ /* 1 + 10 = 11 */
+            /* background-color: red; */
+        }
+
+        body>.box{  /* 1 + 10 = 11 */
+            /* background-color: hotpink; */
+        }
+        #body .box{ /* 100 + 10 = 110 */
+            /* background-color: blue; */
+        }
+        #box1{  /* 100 */
+            /* background-color: lightblue; */
+        }
+        
+        body div.box{  /* 10+1+1 = 12 */
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        h2,.box{  /* 10 */
+            background-color: purple;
+        }
+
+        .box:hover{  /* 10+10 = 20 */
+            /* background-color: orangered; */
+        }
+        body div.box:hover{  /* 1+10 */
+            background-color: palegreen;
+        }
+        div{
+            background-color: saddlebrown !important;
+        }
+    </style>
+</head>
+<body id="body">
+    <h2>123</h2>
+    <div class="box" id="box1" style="background-color: pink;">box</div>
+</body>
+</html>

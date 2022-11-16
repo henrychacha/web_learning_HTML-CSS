@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 'header header header'
+                                 'o p q'
+                                 'x p z';
+        }
+        .container div{
+            border:1px solid black;
+        }
+        .container .item01{
+            grid-area:p;
+            background-color: red;
+        }
+        .container .item02{
+            grid-area:header;
+            background-color: yellow;
+        }
+        /* .container .item03{
+            grid-area:x;
+            background-color: lightgreen;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item01">item01</div>
+       <div class="item02">item02</div>
+       <div class="item03">item03</div>
+    </div>
+</body>
+</html>

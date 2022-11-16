@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+
+        .box1{
+            border: 5px solid black;
+        }
+        .box1 div{
+            width: 500px;
+            height: 400px;
+        }
+        .box1 .left{
+            background-color: red;
+            float: left;
+        }
+        .box1 .right{
+            background-color: yellow;
+            float: right;
+        }
+        .list{
+            list-style: none;
+            border: 5px solid green;
+        }
+        .list li{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background-color: red;
+            margin-left: 10px;
+        }
+
+        .outer{
+            background-color: #999;
+        }
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .outer .left{
+            float: left;
+            width: 500px;
+            height: 100px;
+            background-color: lightpink;
+        }
+        .outer .right{
+            float: right;
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <ul class="list clearfix">
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <li>4444</li>
+    </ul>
+
+    <p>我是一个段落</p>
+
+    <div class="outer">
+        <div class="wrap clearfix">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <p>我是一个段落</p>
+
+</body>
+</html>

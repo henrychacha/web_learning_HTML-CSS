@@ -1,0 +1,87 @@
+// @import "reset.less"; 
+
+/* css注释 */
+
+// less注释
+
+@m-color:#f00;
+
+.box{
+    width: 100px;
+    height: 200px;
+    background-color: @m-color;
+}
+
+// 混入 
+.size(@w:100px,@h:100px){
+    width:@w;
+    height:@h;
+}
+.box1{
+    .size(@h:200px);
+    background-color: red;
+}
+
+.boxShadow(@h:0px,@v,@blur,@s:0px,@c:#333){
+    box-shadow: @arguments;
+}
+
+.box2{
+    .boxShadow(@v:0px,@blur:5px,@s:10px);
+}
+
+
+// 嵌套
+
+.header{
+    height:50px;
+    background-color: #333;
+    .left{
+        float: left;
+        ul{
+            list-style: none;
+            li{
+                float: left;
+                a{
+                    color: red;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                &.first{
+                    margin-left: 0px;
+                } 
+            }
+        }
+    }
+    .right{
+        float: right;
+        p{
+            span{
+
+            }
+        }
+    }
+}
+
+
+// 继承
+
+.size1{
+    width: 100px;
+    height: 100px;
+}
+.box3{
+    &:extend(.size1);
+    background-color: red;
+}
+
+//运算
+@m-w:1000px;
+.box4{
+    width: @m-w/5;
+    height: 1000/(2+5px);
+
+    border-width:calc( 1000 / 5px);
+
+}

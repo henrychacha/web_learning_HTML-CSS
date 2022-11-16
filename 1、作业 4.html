@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loding{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* background-color: aquamarine; */
+            margin: 0 auto;
+        }
+        
+        .circle-large{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 120px;
+            height: 120px;
+            border: 20px solid lightseagreen;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px #666;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            animation: large-rotate 1s linear infinite;
+
+        }
+        .circle-small{
+            position: absolute;
+            left: 55px;
+            top: 55px;
+            width: 50px;
+            height: 50px;
+            border: 20px solid lightseagreen;
+            border-radius: 50%;
+            border-bottom-color: transparent ;
+            border-left-color: transparent;
+            animation: small-rotate 1s linear infinite;
+        }
+
+        @keyframes large-rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes small-rotate {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loding">
+        <div class="circle-large"></div>
+        <div class="circle-small"></div>
+    </div>
+</body>
+</html>

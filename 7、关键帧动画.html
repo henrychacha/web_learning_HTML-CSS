@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: box_ani 2s cubic-bezier(.08,.73,.42,.93);
+        }
+
+
+        /* 定义box动画节点 */
+        @keyframes box_ani{
+           /*  0%{
+                width: 100px;
+            }
+            100%{
+                width: 200px;
+            } */
+
+            from{
+                width: 100px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+
+        .box1{
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            /* animation: box1_ani 2s 3s infinite linear alternate; */
+            animation: box1_ani 2s linear forwards;
+
+            animation-duration: 4s;
+        }
+
+        @keyframes box1_ani{
+            0%{
+                left:0;
+                top: 0;
+            }
+            50%{
+                left: 300px;
+                top: 200px;
+            }
+            100%{
+                left:600px;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <p>hello world</p>
+</body>
+</html>

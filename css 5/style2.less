@@ -1,0 +1,75 @@
+.header{
+    height: 50px;
+    background-color: #333;
+    .left{
+        float: left;
+        ul{
+            list-style: none;
+            line-height: 50px;
+            li{
+                float: left;
+                background-color: orange;
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: orange;
+                    }
+                }
+
+
+                &.red{
+                    background-color: red;
+                }
+            }
+        }
+    }
+
+    .right{
+        float: right;
+        p{
+            font-size: 30px;
+            color: #999;
+            &::after{
+                content: '';
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+}
+
+
+
+.size{
+    width: 100px;
+    height: 100px;
+}
+.box{
+    &:extend(.size);
+    background-color: red;
+}
+
+.box1{
+    &:extend(.size);
+    border: 2px solid blue;
+}
+
+
+.box2{
+    width: 1000px/2;
+    height: 20*10px;
+    border-width: 20-18px;
+    border-radius: 10+5px;
+    margin: (10-5px)*20;
+}
+
+ul li{
+    width: 1000/5-40px;
+}
+
+@con-size:1000px;
+
+.box .item{
+    width: @con-size/5;
+}

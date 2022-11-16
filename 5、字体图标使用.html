@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontIcon/iconfont.css">
+    <script src="./fontIcon/iconfont.js"></script>
+    <!-- 注意src的链接是否正确 -->
+    <style>
+        .fs30{
+            font-size: 30px;
+            color: hotpink;
+        }
+        .fs30:hover{
+            color: lightgreen;
+        }
+
+        .icon-gouwuche{
+            color: #999;
+            font-size: 30px;
+        }
+        .icon-gouwuche:hover{
+            color: orangered;
+        }
+        .icon {
+            font-size: 30px;
+            /* 手动定义font-size的值，否则是默认的rem为16px */
+            color: orangered;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }   
+    </style>
+</head>
+<body>
+    <p>unicode引入</p>
+    <span class="iconfont fs30">&#xe60b;</span>
+
+    <p>class引入</p>
+    <span class="iconfont icon-gouwuche"></span>
+    <span class="iconfont icon-zhuye"></span>
+
+    <p>symbol引入</p>
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-gouwuche"></use>
+    </svg>  
+
+</body>
+</html>

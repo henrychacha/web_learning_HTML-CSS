@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:12px;
+        }
+
+        body{
+            font-size:2rem;  /* 大屏幕盒和中等屏幕 默认字体 24px */
+        }
+
+        /* 小屏幕默认字体 18px*/
+        @media screen and (max-width:991px){
+            body{
+                font-size: 1.5rem;
+            }
+        }
+
+        /* 超小屏幕默认字体 12px*/
+        @media screen and (max-width:767px){
+            body{
+                font-size: 1rem;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>
+        Voilà helps you communicate insights, by transforming a Jupyter Notebook into a stand-alone web application you can share. It gives you control over what your readers experience in a secure and customizable interactive dashboard.
+    </p>
+</body>
+</html>

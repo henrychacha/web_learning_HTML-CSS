@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 2、通过c's's把创建出来的标签转换成块级标签 */
+       /*  header,footer,nav,main,article,aside,hgroup,figure,figcaption{
+            display: block;
+        } */
+        .header{
+            line-height: 50px;
+            background-color: lightblue;
+        }
+        .footer{
+            line-height: 100px;
+            background-color: #999;
+        }
+        .main{
+            height: 600px;
+            /* background-color: lightsalmon; */
+        }
+        .article{
+            float:left;
+            width: 800px;
+            height: 600px;
+            background-color: lawngreen;
+        }
+        .section{
+            /* height: 200px; */
+            background-color: lightgray;
+            margin: 5px auto;
+        }
+        .aside{
+            float: right;
+            width: 400px;
+            height: 600px;
+            background-color: palevioletred;
+        }
+        .figure{
+            text-align: center;
+        }
+        mark{
+            background-color: transparent;
+            color:hotpink;
+        }
+    </style>
+
+
+    <!-- <script>
+        // 1、用js创建新增的标签
+        document.createElement('header');
+        document.createElement('footer');
+        document.createElement('nav');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('section');
+        document.createElement('hgroup');
+        document.createElement('main');
+        document.createElement('figure');
+        document.createElement('figcaption');
+        document.createElement('mark');
+        document.createElement('time');
+        
+    </script> -->
+
+<!--[if ie]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+<![endif]-->
+</head>
+<body>
+    <header class="header">
+        <hgroup>
+            <h1>优就业</h1>
+            <h2>中公教育IT培训品牌</h2>
+        </hgroup>
+    </header>
+    <main class="main">
+        <article class="article">
+           <header>
+               <h3>海淀区委副书记孟景伟调研中公教育疫情防控与“互联网+教育”</h3>
+               <nav class="nav">
+                   <a href="#">AA</a>
+                   <a href="#">BB</a>
+                   <a href="#">CC</a>
+                </nav>
+           </header> 
+           <section class="section">
+               <h4>主题1</h4>
+               <p>今天是<time datetime="2020/4/1">愚人节</time></p>
+               <p> 双十一开抢时间<time>2020/11/11 11:11:11</time></p>
+           </section>
+           <figure class="figure">
+               <img src="http://www.ujiuye.com/uploadfile/2020/0217/20200217093833339.jpg" alt="" width="400">
+               <figcaption>孟景伟副书记一行督导检查公司疫情防控工作</figcaption>
+           </figure>
+           <section class="section">
+                <h4>主题2</h4>
+                <p>特携手 新浪教育、腾讯新闻-腾讯企鹅新媒体学院、今日头条、网易云课堂 分别推出<mark>“天天好课”</mark>“就业创造营”“青春有证”等免费直播课程，以及腾讯“双百云课”新媒体公益精品课计划、头条“在家上课”、网易云“在线开工开课”频道公益课程，致力于满足广大学子疫情期间学习需求，助力前沿技能学习。</p>
+           </section>
+
+
+        </article>
+        <aside class="aside">
+            我是侧边栏
+        </aside>
+    </main>
+    <footer class="footer">我是网页的底部</footer>
+</body>
+</html>

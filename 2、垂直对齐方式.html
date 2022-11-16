@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .box img{
+            width:150px;
+            vertical-align: middle;
+        }
+        .span1,.span2{
+            background-color: red; 
+            vertical-align: middle;
+        }
+        .span1{
+            font-size: 30px;
+        }
+        .span3,.span4{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            vertical-align: middle;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- 
+        图片和文字中线对齐，给图片设置vertical-align:middle;
+     -->
+    <div class="box">文字pgP <img src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top-e3b63a0b1b.png" alt=""></div>
+
+    <!-- 
+        行内元素中线对齐，给两个行内元素都设置vertical-align:middle;
+     -->
+
+     <span class="span1">span1</span>
+     <span class="span2">span2</span>
+
+     <!-- 行内块元素中线对齐，给两个行内块都设置 vertical-align:middle;  -->
+     <div></div>
+     <span class="span3">span3</span>
+     <span class="span4">span4 <br> span44</span>
+     
+</body>
+</html>

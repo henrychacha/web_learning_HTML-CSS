@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+            width: 20%;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:1199px) {
+            ul li{
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width:991px){
+            ul li{
+                width: 33.33%;
+            }    
+        }   
+
+        @media screen and (max-width:767px){
+            ul li{
+                width: 50%;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        大屏幕 ： 一行 5个 模块
+        中等屏幕： 一行放 4个模块
+        小屏幕： 一行放 3个模块
+        超小屏幕： 一行放2个
+
+     -->
+
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+     </ul>
+</body>
+</html>

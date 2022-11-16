@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1140px;
+            height: 380px;
+            margin: 0 auto;
+            display: grid;
+            grid-template: 1fr 1fr / 680px auto;
+            grid-gap: 15px;
+            grid-template-areas: 'a b'
+                                 'a c'   ;
+        }
+        .item01{
+            background-color: lightpink;
+            grid-area: a;
+            
+        }
+        .item02{
+            background-color: limegreen;
+        }
+        .item03{
+            background-color: lightseagreen;
+        }
+
+        .container1{
+            width: 1140px;
+            height: 358px;
+            margin: 0 auto;
+            display: grid;
+            grid-template:1fr 1fr / 504px 411px 197px;
+            grid-gap: 15px;
+            grid-auto-flow: column;
+        }
+        .item04{
+            background-color: limegreen;
+            grid-row: 1 / 3;
+
+        }
+        .item05{
+            background-color: yellow;
+        }
+        .item06{
+            background-color: tomato;
+        }
+        .item07{
+            background-color: lightskyblue;
+            grid-row: 1 / 3;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item01"></div>
+        <div class="item02"></div>
+        <div class="item03"></div>
+    </div>
+
+    <div class="container1">
+        <div class="item04"></div>
+        <div class="item05"></div>
+        <div class="item06"></div>
+        <div class="item07"></div>
+    </div>
+
+</body>
+</html>

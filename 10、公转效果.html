@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #333;
+            perspective: 1000px;
+        }
+        .line{
+            position: relative;
+            width: 600px;
+            height: 600px;
+            box-shadow: 0px 0px 20px #fff;
+            border-radius: 50%;
+            margin: 50px auto;
+            transform: rotateX(80deg) rotateY(-20deg); 
+             transform-style: preserve-3d;
+        }
+        .earth{
+            position: absolute;
+            left: 270px;
+            top:-30px ;
+            width: 60px;
+            height: 60px;
+            transform-origin: center 330px;
+            animation: earth-rotate 6s linear infinite;
+            transform-style: preserve-3d;
+            
+        }
+
+        .earth div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0px 0px 10px lightseagreen;
+            border-radius: 50%;
+            
+        }
+        .circle02{
+            transform: rotateY(90deg);
+        }
+        .circle03{
+            transform: rotateY(45deg);
+        }
+        .circle04{
+            transform: rotateY(135deg);
+        }
+        @keyframes earth-rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="line">
+        <div class="earth">
+            <div class="circle01"></div>
+            <div class="circle02"></div>
+            <div class="circle03"></div>
+            <div class="circle04"></div>
+        </div>
+    </div>
+</body>
+</html>

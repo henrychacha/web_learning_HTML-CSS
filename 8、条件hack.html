@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 300px; 
+            height: 100px;
+            background-color:red ;
+        }
+    </style>
+
+    <!--[if ie]>
+       <style>
+            p{
+                background-color:green;
+            }
+       </style>
+    <![endif]-->
+</head>
+<body>
+    <p>这个段落标准浏览器显示</p>
+    <!--[if ie]>
+        <p>这个段落只有ie会显示</p>
+    <![endif]-->
+
+     <!--[if gt ie 8]>
+        <p>这个段落只有ie8以上会显示</p>
+    <![endif]-->
+
+    <!--[if lt ie 8]>
+        <p>这个段落只有ie8以下会显示</p>
+    <![endif]-->
+
+    <!--[if ie 8]>
+        <p>这个段落只有ie8会显示</p>
+    <![endif]-->
+
+    <!--[if gte ie 8]>
+        <p>这个段落会在ie8及以上的浏览器显示</p>
+    <![endif]-->
+    <!--[if lte ie 7]>
+        <p>这个段落会在ie7及以下的浏览器显示</p>
+    <![endif]-->
+</body>
+</html>

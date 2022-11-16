@@ -1,0 +1,101 @@
+@import "reset";
+
+@m-color:#e9967a;
+@txt-white:#fff;
+html,body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to top,@m-color,@txt-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 400px;
+    // border: 1px solid black;
+    text-align: center;
+    .icon-U{
+        font-size: 80px;
+        color: orangered;
+    }
+    form{
+        background-color: #fff;
+        text-align: left;
+        padding: 20px 40px 50px;
+        margin-top: 30px;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 20px;
+        }
+        label{
+            display: block;
+            font-size: 14px;
+            margin: 10px 0;
+            font-weight: bold;
+            &[for=check]{
+                display: inline;
+                vertical-align: middle;
+            }
+        }
+        input{
+            display: block;
+            border: 2px solid #d9d9d9;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            height: 40px;
+            &[type=checkbox]{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+            }  
+            &[type=submit]{
+                background-color: orangered;
+                border: none;
+                font-size: 20px;
+                color: @txt-white;
+            }
+        }
+        p{
+            margin: 10px 0;
+            &.toregister{
+                text-align: center;
+
+                a{
+                    text-decoration: underline;
+                    color:#007acc ;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:1199px){
+    .form-box{
+        width: 970px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .form-box{
+        width: 750px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .form-box{
+        width: 90%;
+        .icon-U{
+            display: none;
+        }
+    }
+}
+
+

@@ -1,0 +1,268 @@
+@import "reset";
+body{
+    background-color: #e0e0e0;
+}
+.container{
+    width: 7.5rem;
+    margin: 0 auto;
+    padding-bottom: 1.14rem ;
+}
+.wrap{
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.header{
+    // position: fixed;
+    // top:0;
+    // left: 50%;
+    // margin-left: -3.75rem;
+    // z-index: 999;
+    width: 7.5rem;
+    height: .88rem;
+    background-color: #f26b11;
+   .wrap{
+        height: .88rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   }
+   img{
+       width: .17rem;
+       height: .29rem;
+   }
+   h2{
+       font-size: .36rem;
+       color: #fff;
+   }
+   .points{
+       span{
+           display: inline-block;
+           margin-left: .08rem;
+           width: .12rem;
+           height: .12rem;
+           background-color: #fff;
+           border-radius: 50%;
+        }
+   }
+}
+
+
+.pro-list{
+    overflow: hidden;
+    background-color: #fff;
+    li{
+        position: relative;
+        // display: flex;
+        // overflow: hidden;
+        padding: 0 .22rem;
+        height:1.76rem;
+        box-shadow: 0px 0px .2rem #e0e0e0;
+        margin-top: .3rem;
+        line-height: 1.76rem;
+        &.active{
+            left: -.98rem;
+        }
+        &>*{
+            display:inline-block;
+            vertical-align: middle;
+        }
+        i{
+            display: inline-block;
+            width: .34rem;
+            height: .34rem;
+            border:1px solid #b0b0b0;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-right: .4rem;
+            &.checked{
+                border-color: #c05447;
+                background: url("../images/shoping_car_images/select.jpg") no-repeat center;
+                background-size: 70%;
+            }
+        }
+        img{
+            width: 1.02rem ;
+            height: .82rem;
+            margin-right: .34rem;
+        }
+        p{
+            line-height: 1.5;
+            span{
+                display: block;
+            }
+            .pro-name{
+                font-size: .28rem;
+                color: #333;
+            }
+            .pro-des{
+                font-size: .24rem;
+                color: #999;
+                line-height: 1.8;
+            }
+            .pro-price{
+                font-size: .26rem;
+                color: #c05447;
+            }
+        }
+        .count-group{
+            display: flex;
+            float: right;
+            width: 2.12rem;
+            height: .6rem;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: .04rem;
+            line-height: .6rem;
+            margin-top: .58rem;
+            input[type=button]{
+                flex-shrink: 0;
+                width: .62rem;
+                height: .58rem;
+                background-color: transparent;
+                font-size: .24rem;
+            }
+            input[type=text]{
+                width: .84rem;
+                flex-shrink: 1;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
+                font-size: .3rem;
+                text-align: center;
+            }
+        }
+        .del{
+            position: absolute;
+            right: -.98rem;
+            top: 0;
+            width: .98rem;
+            height: 1.76rem;
+            background-color: #e43a3d;
+            color: #fff;
+            font-size: .26rem;
+            text-align: center;
+        }
+    }
+}
+
+
+.contact{
+    height: 1.52rem;
+    margin-top: .3rem;
+    background-color: #fff;
+    padding: 0 .22rem;
+    .txt{
+        float: left;
+        font-size: .26rem;
+        width:6.7rem ;
+        padding-top: .26rem;
+        .user{
+            span{
+                float: right;
+            }
+        }
+        .address{
+            margin-top: .22rem;
+            span{
+                display: inline-block;
+                width: 5.3rem;
+                vertical-align: top;
+                line-height: .3rem;
+            }
+        }
+
+    }
+
+
+
+
+
+    .edit{
+        float: right;
+        margin-top: .63rem;
+        
+        img{
+            width: .19rem;
+            height: .26rem;
+        }
+    }
+}
+
+
+.detail{
+    height: 4rem;
+    background-color: #fff;
+    margin-top: .3rem;
+    
+    .sale{
+        height: .99rem;
+        border-bottom: 1px solid #e0e0e0;
+        line-height: .99rem;
+        padding: 0 .22rem;
+        font-size: .28rem;
+        span{
+            font-size: .24rem;
+        }
+        i{
+            font-size: .22rem;
+            border: 1px solid #c05447;
+            color: #c05447;
+            padding: .08rem .1rem;
+            border-radius: .05rem;
+            margin-right: .2rem;
+        }
+        a{
+            float: right;
+            img{
+                width: .35rem;
+                height: .21rem;
+            }
+        }
+    }
+}
+
+.fixed-bar{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+    width: 7.5rem;
+    height: 1.14rem;
+    background-color: #fff;
+    display: flex;
+    .count{
+        width: 1.72rem;
+        border-top:1px solid #e0e0e0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 0.56rem;
+            height:.53rem ;
+            margin-bottom: .1rem;
+        }
+        span{
+            display: block;
+            font-size: .2rem;
+            color: #999;
+        }
+        
+    }
+    .into-car{
+        background-color: #f26b11;
+        flex-grow: 1;
+        text-align: center;
+        line-height: 1.14rem;
+        color: #fff;
+        font-size: .3rem;
+    }
+    .buy{
+        flex-grow: 1;
+        background-color: #e43a3d;
+        text-align: center;
+        line-height: 1.14rem;
+        color: #fff;
+        font-size: .3rem;
+    }
+}

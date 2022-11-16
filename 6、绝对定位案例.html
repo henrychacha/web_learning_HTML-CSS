@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            position: relative;
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+        }
+        .banner img{
+            width: 1226px;
+            height: 460px;
+        }
+        .banner .nav{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:234px ;
+            height: 460px;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .banner .btn{
+            position: absolute;
+            top: 190px;
+            width: 50px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .banner .btn-prev{
+            left: 234px;
+        }
+        .banner .btn-next{
+            /* left: 1176px; */
+            right: 0;
+        }
+        .banner .focus-list{
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+            width: 180px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/755aca9487082e7698e16f17cfb70839.jpg?w=2452&h=920" alt="">
+        <div class="nav"></div>
+        <div class="btn btn-prev"></div>
+        <div class="btn btn-next"></div>
+        <div class="focus-list"></div>
+    </div>
+</body>
+</html>

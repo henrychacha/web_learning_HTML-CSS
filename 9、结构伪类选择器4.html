@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer p:first-of-type{  /* 先找到.outer中的p标签，再判断选到的p标签是否是同级同种类型中的第一个子元素*/
+            border: 2px solid black;
+        }
+        .outer p:first-child{  /*  先找到.outer中的p标签，再判断选到的p标签是否是同级中的第一个子元素  */
+            background-color: blueviolet;
+        }
+
+        .outer div:last-of-type{
+            border: 2px solid yellow;
+        }
+
+        .outer :nth-of-type(3){
+            font-size: 30px;
+        }
+
+        .outer :nth-last-of-type(2){
+            border: 5px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div>div1</div>
+        <p>p1</p>
+        <p>p2</p>
+        <div>div2</div>
+        <div>div3</div>
+        <p>p3</p>
+        <p>p4</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 600px;
+        }
+        .box{
+            
+            width: 310px;
+            height: 310px;
+            border: 5px solid yellow;
+            margin: 50px auto;
+            transform: rotateY(30deg) ;
+            transform-style: preserve-3d;
+        }
+        .inner{
+            width: 300px;
+            height: 300px;
+            border: 5px solid red;
+            transform: rotateX(30deg);
+            transform-style: preserve-3d;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">
+            <img src="../0401/img/pic.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

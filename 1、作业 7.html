@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .content{
+            width: 1140px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .content h3{
+            line-height: 2.5;
+        }
+        .content p{
+            color: #999;
+            margin-bottom: 25px;
+        }
+
+        .box{
+            /* height: 358px; */
+            /* overflow: hidden; */
+            border:2px solid  black;
+        }
+        .box .left{
+            float: left;
+            width: 504px;
+            height: 458px;
+            margin-right: 14px;
+        }
+        .box .center{
+            float: left;
+            width: 411px;
+            height: 358px;
+        }
+        .box .center div{
+            height:172px ;
+        }
+        .box .center .item01{
+            margin-bottom: 14px;
+        }
+        .box .right{
+            float: right;
+            width: 197px;
+            height: 458px;
+        }
+        /* ::after 伪元素 : 在元素末尾（
+        内部）添加一个标签 */
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+
+     /*    .box::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        ul::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        ul{
+            list-style: none;
+            border: 2px solid blue;
+        }
+        ul li{
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: red;
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h3>全球大牌优选，买手用心挑选</h3>
+        <p>全球好货 原装正品 海外直邮 自有保税仓</p>
+        <div class="box clearfix">
+            <div class="left">
+                <img src="http://asset.ibanquan.com/s/30611/727/index_global1_pic_1?v=1568268246_1582015991" alt="">
+            </div>
+            <div class="center">
+                <div class="item01">
+                    <img src="http://asset.ibanquan.com/s/30611/727/index_global1_pic_2?v=1568268246_1582015991" alt="">
+                </div>
+                <div class="item02">
+                    <img src="http://asset.ibanquan.com/s/30611/727/index_global1_pic_8?v=1568268246_1582015991" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <img src="http://asset.ibanquan.com/s/30611/727/index_global1_pic_9?v=1568268246_1582015991" alt="">
+            </div>
+            <!-- <div style="clear: both;"></div> -->
+            
+        </div>
+      
+    </div>
+    <h3 style="background-color: red;">全球大牌优选，买手用心挑选</h3>
+    <p>全球好货 原装正品 海外直邮 自有保税仓</p>
+
+    <ul class="clearfix">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

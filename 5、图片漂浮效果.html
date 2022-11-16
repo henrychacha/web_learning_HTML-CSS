@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: relative;
+            width: 210px;
+            height: 90px;
+            border: 1px solid #b0b0b0;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .box img{
+            position: absolute;
+            /* 这里的position:absolute;必须要写，否则没有效果。如果只有hover写了position: absolute;那么悬停的时候有效果，取消悬停的时候transition没有效果 */
+            left: 15px;
+            top: 0;
+            width: 180px;
+            height: 89px;
+        }
+        .box:hover img{
+            /* 这里的position: absolute;可写可不写 */
+            left: -20px;
+            transition: left 0.3s linear;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="http://asset.ibanquan.com/s/30611/727/index_global1_pic_3?v=1568268246_1582015991" alt="">
+    </div>
+</body>
+</html>

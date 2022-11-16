@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*  .box div{
+           border: 1px solid black; 
+        } */
+
+        .box>div{
+           border: 1px solid black; 
+        }
+        .box>.green{
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>
+            child
+            <div>child-child</div>
+            <p class="green">inner-p</p>
+        </div>
+        <p class="green">pppp</p>
+    </div>
+</body>
+</html>

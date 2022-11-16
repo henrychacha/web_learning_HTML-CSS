@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            /* padding: 50px 80px 150px; */
+            padding:0 10px;
+            background-color: red;
+            border:1px solid black;
+            border-width: 2px;
+            border-style: solid;
+            border-color: chartreuse;
+
+            border-top: 2px solid yellow;
+            border-top-width: 5px;
+            border-top-style: dotted;
+            border-top-color: violet;
+
+            border-right:50px solid rgba(0,0,0,0.4);
+            margin: 20px 40px 60px 80px;
+
+
+        }
+
+
+        .outer{
+            width: 700px;
+            height: 500px;
+            border: 2px solid black;
+           
+        }
+        .inner{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 100px auto;
+        }
+        .parent{
+            width: 500px;
+            height: 300px;
+            border:2px solid black;
+            margin: 0 auto;
+        }
+        .parent img{
+            width: 200px;
+            height: 200px;
+            
+        }
+        .img1{
+            /* margin-left: -50px; */
+            margin-top:-50px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="outer">
+        <div class="inner">inner内容</div>
+    </div>
+
+    <div class="parent">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0b8cffcbdaa88e2a314f0a372ca75dd.jpg?w=468&h=600" alt="" class="img1">
+        <p style="height:100px;background-color:yellow;margin: 0;padding: 0;"></p>
+        <!-- <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0b8cffcbdaa88e2a314f0a372ca75dd.jpg?w=468&h=600" alt="" class="img2"> -->
+    </div>
+</body>
+</html>

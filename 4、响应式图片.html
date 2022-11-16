@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        ul li{
+            float: left;
+            width: 20%;
+            
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        ul li img{
+           
+            width: 100%;
+
+            display: block; 
+        }
+
+        @media screen and (max-width:1199px) {
+            ul li{
+                width: 25%;
+            }
+        }
+
+        @media screen and (max-width:991px){
+            ul li{
+                width: 33.33%;
+            }    
+        }   
+
+        @media screen and (max-width:767px){
+            ul li{
+                width: 50%;
+            } 
+        }
+
+
+
+        .banner{
+            width: 80%;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        .banner img{
+            width: auto;   /* 撑开父元素，这个是可以不要的，但是不能是100%，因为那样，会把图片失真放大*/
+            max-width: 100%; /* 这个不能不要 ，这是规定最大宽度不能超过父级元素的宽度，因为现在图片是一个块元素，当它的宽度超过了父元素，会溢出*/
+
+            display: block; /* 消除图片形成的白边*/
+            margin: 0 auto;
+        }
+
+        .bg{
+            width: 30%;
+            height: 30%;
+            margin: 0 auto;
+            border: 1px solid black;
+            background: url("https://img14.360buyimg.com/mobilecms/s300x300_jfs/t18829/158/2360644771/88525/2c465351/5af1b60aN4a837335.jpg!q70.jpg.webp") no-repeat center;
+            background-size: contain;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        大屏幕 ： 一行 5个 模块
+        中等屏幕： 一行放 4个模块
+        小屏幕： 一行放 3个模块
+        超小屏幕： 一行放2个
+
+     -->
+
+     <ul>
+         <li>
+             <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/99122/36/17507/112616/5e8bf826E3d8aac2b/a756778d114ab771.jpg.webp" alt="">
+         </li>
+         <li>
+             <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/113323/32/508/86440/5e8d4610Ed2f31e10/378049c6e427a205.jpg.webp" alt="">
+         </li>
+         <li>
+            <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/99122/36/17507/112616/5e8bf826E3d8aac2b/a756778d114ab771.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/113323/32/508/86440/5e8d4610Ed2f31e10/378049c6e427a205.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/99122/36/17507/112616/5e8bf826E3d8aac2b/a756778d114ab771.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/113323/32/508/86440/5e8d4610Ed2f31e10/378049c6e427a205.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/99122/36/17507/112616/5e8bf826E3d8aac2b/a756778d114ab771.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/113323/32/508/86440/5e8d4610Ed2f31e10/378049c6e427a205.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/99122/36/17507/112616/5e8bf826E3d8aac2b/a756778d114ab771.jpg.webp" alt="">
+        </li>
+        <li>
+            <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/113323/32/508/86440/5e8d4610Ed2f31e10/378049c6e427a205.jpg.webp" alt="">
+        </li>
+     </ul>
+
+
+     <div class="banner">
+         <img src="https://imgcps.jd.com/ling/12832130/SVTnp5HmioDlpb3kuabpkpzmg6A/5q-P5ruhMTAw5YePNTA/p-5bd8253082acdd181d02fa1f/c4e71d73.jpg" alt="">
+         <!-- <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt=""> -->
+     </div>
+
+
+     <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href^=http]{
+            color: chartreuse;
+        }
+        a[href$=html]{
+            color: cyan;
+        }
+        [class*=box]{
+            color: red;
+            font-size: 30px;
+        }
+        [class*=red]{
+            border: 2px solid pink;
+        }
+        [class*=e]{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">aaaa</a>
+    <a href="./1、音视频资源.html">bbbb</a>
+    <a href="http://www.ujiuye.com">bbbb</a>
+    <div class="box redbox">1</div>
+    <div class="box1 red">2</div>
+    <div class="box2 aared">3</div>
+</body>
+</html>

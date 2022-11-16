@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        div[class]{  /* 11 */
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        div[id=box1]{  /* 11 */
+           border: 2px solid blue; 
+        }
+        div[flag]{
+            background-color: red;
+        }
+        div[class=red]{
+            border:3px solid yellow
+        }
+       
+        input[type=text]{
+            border: 2px solid red;
+        }
+        li[class~=red]{
+            background-color: turquoise;
+        }
+        li[flag~=hello]{
+            border: 2px solid purple;
+        }
+        li[class=red]{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1" ></div>
+    <div class="red" flag="1"></div>
+    <div class="green"></div>
+    <p class="p1"></p>
+
+    <input type="text">
+    <input type="radio">
+    <input type="tel">
+
+    <ul>
+        <li class="box red" flag="hello ujiuye">1</li>
+        <li class="box1 redbox" flag="hello ujiuye11">2</li>
+        <li class="box2 red" flag="helloword ujiuye">3</li>
+    </ul>
+</body>
+</html>

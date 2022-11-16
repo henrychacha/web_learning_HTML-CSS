@@ -1,0 +1,51 @@
+登录条：loginBar         
+标志：logo                
+侧边栏：sideBar 
+广告：banner             
+导航：nav    mainNav main-nav nav-left  nav-right  nav-top  nav-bottom           
+子导航：subNav
+菜单：menu                
+子菜单：subMenu           
+搜索：search   searchBar  searchBtn
+滚动：scroll   scrollBar               
+页面主体：main             
+内容：content 
+标签页：tab               
+列表：list    article-list  img-list   focus-list           
+提示信息：msg  
+小技巧：tips              
+栏目标题：title            
+加入：joinus
+指南：guild               
+服务：service              
+热点：hot
+新闻：news                
+按钮：btn                  
+投票：vote       
+状态：status               
+合作伙伴：partner       
+外　套：wrap
+商　标：label
+顶导航：topnav 
+左导航：leftSideBar 
+右导航：rightSideBar     
+菜单内容： menuContent 
+菜单容器：　menuContainer 
+边导航图标：sideBarIcon 
+图标 ：icon 
+注释：note 
+版    权：copyRight
+友情链接：friendLink   
+容器：container
+页头：header   
+页脚：footer 
+当前：current  
+激活：acitve 
+购物车：shop  shop-car 
+登陆：login   
+注册：regsiter   
+下载：download 
+面包屑(路径导航)：breadCrumb
+
+主页： index
+详情： detail

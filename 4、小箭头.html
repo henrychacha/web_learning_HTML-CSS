@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arrow{
+            position: relative;
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid; */
+        }
+        .arrow div{
+           width: 0px;
+           height: 0px;
+           border: 50px solid;
+           border-color: red transparent transparent; 
+        }
+        .arrow .cart02{
+            position: absolute;
+            top: -5px;
+            left: 0;
+            border-top-color: #fff;
+        }
+
+        .arrow1{
+            position: relative;
+            width: 0px;
+            height: 0;
+            border: 50px solid;
+            border-color: turquoise transparent transparent;
+            margin-top: 10px;
+        }
+        .arrow1::after{
+            position: absolute;
+            left: -50px;
+            top: -55px;
+            content: '';
+            width: 0px;
+            height: 0px;
+            border: 50px solid;
+            border-color: #fff transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="arrow">
+        <div class="cart01"></div>
+        <div class="cart02"></div>
+    </div>
+
+    <div class="arrow1"></div>
+</body>
+</html>

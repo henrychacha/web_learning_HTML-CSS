@@ -1,0 +1,32 @@
+@import "reset";
+/* 
+    css的标准注释，会被编译进css文件中
+*/
+
+// less的注释  
+
+@main-color:#00ff00;
+@sub-color:orange;
+@txt-color:#666;
+@fs-lg:20px;
+@fs-s:12px;
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: @main-color;
+    color: @txt-color;
+    font-size: @fs-lg;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    color: @txt-color;
+    border: 2px solid @main-color;
+    font-size: @fs-s;
+}
+.div1{
+    background-color: @main-color;
+    font-size: @fs-lg;
+}

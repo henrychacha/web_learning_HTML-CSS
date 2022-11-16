@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .nav{
+            width: 1000px;
+            margin: 0 auto;
+            border-bottom: 4px solid #999;
+        }
+        .nav div{
+            position: relative;
+            top: 4px;
+            float: left;
+            line-height: 50px;
+            padding: 0 20px;
+            /* margin: 0 10px; */
+            border-bottom: 4px solid #999;
+        }
+        .nav div:hover{
+            border-bottom-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav clearfix">
+        <div>AAA</div>
+        <div>BBB</div>
+        <div>CCC</div>
+    </div>
+</body>
+</html>

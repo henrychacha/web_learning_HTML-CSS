@@ -1,0 +1,64 @@
+@side:left;
+.box{
+    width: 100px;
+    height: 100px;
+    border-@{side}-width:2px;
+}
+
+//混入
+
+
+// 不带参数的混入
+// .size{
+//     width: 100px;
+//     height: 100px;
+// }
+
+//带参数的混入
+.size(@w,@h){  // 形参
+    width: @w;
+    height: @h;
+}
+
+.box1{
+    .size(100px,200px);  //实参
+    background-color: red;
+}
+
+.box2{
+    .size(200px,300px);
+    background-color: yellow;
+}
+
+.boxShadow(@h,@v,@blur,@s,@color){
+    box-shadow: @arguments;
+}
+
+.box3{
+    .boxShadow(0px,5px, 10px, 0px, #333)
+}
+.box4{
+    .boxShadow(5px,0px, 20px, 0px, red)
+}
+
+
+
+
+.size1(@w:100px,@h:100px){
+    width: @w;
+    height: @h;
+}
+
+.box5{
+    .size1;
+}
+
+.box6{
+    .size1(200px,300px);
+}
+.box7{
+    .size1(400px);
+}
+.box8{
+    .size1(@h:500px);
+}

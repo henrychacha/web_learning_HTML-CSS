@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "微软雅黑";
+            font-size: 14px;
+        }
+
+        .outer{
+            width: 800px;
+            height: 200px;
+            background-color: aqua;
+            font-family: "宋体";
+            font-size: 30px;
+            /* font-style: italic; */
+            font-weight: bold;
+            line-height: 50px;
+            text-align: left;
+            text-indent: 2em;
+            text-decoration: underline;
+            color: blue;
+            letter-spacing: 10px;
+            word-spacing: 20px;
+            border: 5px solid pink;
+        }
+        .inner{
+            /* width: inherit; */
+            padding-left: 100px;
+            height: 100px;
+            /* background-color: yellow; */
+            font-family: "微软雅黑";
+            border:inherit;
+        }
+        .box{
+            font-size: 30px;
+            color:red ;
+            text-decoration: none ;
+            font-weight: bold;
+        }
+        .box a{
+            color:red ;
+            text-decoration: none ;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        我是 outer 的文字
+        <div class="inner">
+            我是 inner 的文字
+        </div>
+    </div>
+    <div class="box">
+        box文字
+        <a href="#">链接</a>
+    </div>
+</body>
+</html>

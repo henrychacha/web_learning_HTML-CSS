@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单域 -->
+    <form action="./1、作业.html" method="get">
+       <p>
+        用户名： <input type="text" name="username" value="王五" maxlength="10" disabled="disabled"> 
+        <input type="text" name="user" value="李四" readonly="readonly">
+       </p>
+       <p>
+        密码：<input type="password" name="psd" value="123" maxlength="6">
+       </p>
+       <p>
+        性别:
+            <input type="radio" name="gender" value="male">男   
+            <input type="radio" name="gender" value="female" checked="checked">女 
+       </p>
+       <p>
+        爱好：   
+            <input type="checkbox" name="hobby" value="coding" checked="checked">写代码 
+            <input type="checkbox" name="hobby" value="game">玩游戏 
+            <input type="checkbox" name="hobby" value="basket">篮球 
+       </p>
+       <p>
+        文件上传：<input type="file" name="file">
+       </p>
+       <p>
+            <input type="image" src="http://xue.ujiuye.com/public/it/images/logo_it.jpg">
+       </p>
+       <p>
+           隐藏域：<input type="hidden" name="hid" value="1234567">
+       </p>
+       <p>
+           <select name="city" size="2" style="height: 100px;">
+               <option value="beijing" style="width: 100px;background-color: blue;">北京</option>
+               <option value="shanghai">上海</option>
+               <option value="guangzhou" selected="selected">广州</option>
+           </select>
+       </p>
+       <p>
+            <textarea name="des" cols="30" rows="20" style="width: 300px;height: 100px; background-color: aqua;">我就是textarea的value</textarea>
+       </p>
+       <input type="submit" value="注册" disabled="disabled">
+       <input type="reset" value="清空表单">
+       <input type="button" value="普通按钮">
+
+    </form>
+
+    <input type="text" style="width: 100px;height: 100px;">
+    <input type="text">
+
+    <p>
+        <span style="font-size: 20px;display: inline-block; width: 100px;">文字</span>
+        <input type="text" style="height: 50px;">
+    </p>
+</body>
+</html>

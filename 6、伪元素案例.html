@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        ul li{
+            float: left;
+            line-height: 50px;
+        }
+        ul li a{
+            display: block;
+            padding: 0 20px;
+            color: #333;
+            text-decoration: none;
+            background-color: paleturquoise;
+        }
+        ul li a::after{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: transparent;
+            margin: 0 auto;
+            
+        }
+        ul li a:hover{
+            color: orangered;
+        }
+        ul li a:hover::after{
+           background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">UI/UE设计</a>
+        </li>
+        <li>
+            <a href="#">Java开发</a>
+        </li>
+        <li>
+            <a href="#">大前端</a>
+        </li>
+        <li>
+            <a href="#">PHP开发</a>
+        </li>
+        <li>
+            <a href="#">Python+人工智能</a>
+        </li>
+    </ul>
+</body>
+</html>

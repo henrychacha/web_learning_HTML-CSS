@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            display: grid;
+            grid-template:[r1] 1fr [r2] 1fr [r3] / [c1] 1fr [c2] 1fr [c3] 1fr [c4];
+        }
+        .container div{
+            border:1px solid #999999;
+        }
+        .container div:first-child{
+            background-color: red;
+           /*  grid-row-start: r1 ;
+            grid-row-end: r3 ; */
+            grid-row: r1 / r3;
+            /* grid-column-start:c2;
+            grid-column-end:c3; */
+            grid-column: c2 / c3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      
+      
+    </div>
+</body>
+</html>

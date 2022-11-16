@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255,0,0,0.5);
+            font-size: 30px;
+        }
+        .box2{
+            position: relative;
+            top: -140px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            font-size: 30px;
+            opacity: 0.5 ;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">背景透明盒子</div>
+    <p style="height: 100px;background-color: green;font-size: 30px;color: #fff;">hello world</p>
+    <div class="box2">整体透明盒子 
+        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="">
+    </div>
+
+    <div class="box3">ie透明滤镜</div>
+</body>
+</html>

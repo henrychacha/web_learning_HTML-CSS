@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :enabled{
+            width: 200px;
+        }
+        input:disabled{
+            border: 1px solid red;
+        }
+        :checked{
+            width: 50px;
+            height: 50px;
+        }
+        ::selection{
+            background-color: yellow;
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" disabled>
+    <input type="radio" checked>
+    <input type="checkbox">
+    <select name="" id="" disabled>
+        <option value="aa">AA</option>
+        <option value="bb">BB</option>
+    </select>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <p>可以为拥有指定属性的 HTML 元素设置样式,而不仅限于 class 和 id 属性。 注释:只有在规定了 !DOCTYPE 时,IE7 和 IE8 才支持属性选择器。在 IE6 及更低的...</p>
+</body>
+</html>

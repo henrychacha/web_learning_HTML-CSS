@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(40px 90px,120px 80px,red,yellow,green);
+            /* background: -webkit-radial-gradient(50% 50%,red,yellow,green); */
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: -webkit-repeating-radial-gradient(left top,red,yellow 10%);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(red, red 10% , yellow 10% ,yellow 20%);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(rgba(255,0,0,0.4), rgba(255,0,0,0.4) 10%, transparent 10% ,transparent 20%),repeating-radial-gradient(rgba(0,0,255,0.4), rgba(0,0,255,0.4) 15%, transparent 15% ,transparent 30%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

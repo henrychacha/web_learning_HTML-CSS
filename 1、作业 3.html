@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }   
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        } 
+        .clearfix{
+            *zoom:1;
+        }
+        .box{
+            height: 634px;
+            background: url("http://www.ujiuye.com/statics/images/images/part3.jpg") center; 
+        }
+        .wrap{
+            width: 1200px;
+            height: 633px;
+            margin:0 auto;
+            background: url("http://www.ujiuye.com/statics/images/images/part3_in.jpg");
+            padding-top: 1px;
+        }
+
+        .header{
+            line-height: 60px;
+            margin-top: 19px;
+        }
+        .header h3{
+            float: left;
+        }
+        .header ul{
+            list-style: none;
+            float: left;
+            margin-left: 20px;
+        }
+        .header ul li{
+            float: left;
+            padding: 0 10px;
+        }
+        .header .more{
+            float: right;
+        }
+        .content{
+            height: 428px;
+            background-color: #fff;
+            padding:27px 0 30px 20px;
+        }
+        .content .left{
+            float: left;
+            width: 372px;
+            height: 428px;
+            background-color: aquamarine;
+        }
+        .content .right{
+            float: right;
+            width: 788px;
+            height: 428px;
+            background-color: blueviolet;
+        }
+        .content .left .play{
+            line-height: 70px;
+            border: 1px solid palevioletred;
+            text-align: center;
+            
+        }
+        .content .left .play img{
+            vertical-align: middle;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="wrap">
+            <div class="header clearfix">
+                <h3>视频网课</h3>
+                <ul>
+                    <li>AA</li>
+                    <li>BBBB</li>
+                    <li>CCCC</li>
+                    <li>CCC</li>
+                </ul>
+                <a href="#" class="more"> more + </a>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="play">
+                        更多直播课
+                        <img src="http://www.ujiuye.com/statics/images/images/part3_p3.png" alt="">
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

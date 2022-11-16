@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header{
+    width: 1134px;
+    margin: 0 auto;
+    height: 57px;
+    line-height: 57px;
+    /* background-color: aquamarine; */
+
+}
+.header h1{
+    float: left;
+    margin-left: 10px;
+}
+.header .nav-right{
+    float: right;
+    margin-right: 160px;
+    font-size: 14px;
+}
+.header .nav-right a{
+    color: #666;
+    text-decoration: none;
+}
+.header .nav-right a img{
+    margin: 0 5px;
+}
+/* banner */
+.banner{
+    height: 282px;
+    background-color: #e4462f;
+    text-align: center;
+}
+/* 公告汇总 content01  */
+.content01{
+    width: 950px;
+    margin: 58px auto 0;
+    /* background-color: #e0e0e0; */
+}
+.content01 .title{
+    /* height: 25px; */
+    line-height: 23px;
+}
+.content01 .title h2{
+    float: left;
+    /* line-height: 23px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #e4462f;
+    border-bottom: 2px solid #e4462f;
+}
+.content01 .title h2::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 23px;
+    background-color: #e4462f;
+    vertical-align: middle;
+}
+
+.content01 .title a{
+    float: right;
+    color: #fff;
+    padding: 0 10px 0 30px;
+    border-radius: 13px;
+    background: #e4462f url("../images/icon-qq-white.png") no-repeat 6px;
+}
+
+.content01 ul{
+    padding-left: 35px;
+    margin-top: 30px;
+}
+.content01 ul li.head{
+    line-height: 35px;
+    border-bottom:2px solid #dcdcdc ;
+}
+.content01 ul li.head span{
+   border-bottom: 2px solid #e4462f;
+   float: left;
+   margin-right: 11px;
+   text-align: center;
+}
+.content01 ul li.head span{
+    position: relative;
+    bottom: -2px;
+}
+.content01 ul li .col1{
+    width: 95px;
+}
+.content01 ul li .col2{
+    width: 85px;
+}
+.content01 ul li .col3{
+    width: 530px;
+
+}
+.content01 ul li .col4{
+    width: 60px;
+    
+}
+.content01 ul li .col5{
+    width: 75px;
+}
+.content01 ul li a{
+    color: #686868;
+    font-size: 17px;
+}
+.content01 ul li{
+    line-height: 70px;
+    border-bottom: 1px dashed #d3d3d3;
+}
+.content01 ul li span{
+    float: left;
+    text-align: center;
+    margin-right: 11px;
+}
+
+.content01 ul li .col3{
+    text-align: left;
+}
+.content01 ul li:hover a{
+    color: #e4462f;
+}
+.content01 ul li .col4:hover{
+    text-decoration: underline;
+}
+.content01 ul li .col5:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+.header {
+  height: 50px;
+  background-color: #333;
+}
+.header .left {
+  float: left;
+}
+.header .left ul {
+  list-style: none;
+  line-height: 50px;
+}
+.header .left ul li {
+  float: left;
+  background-color: orange;
+}
+.header .left ul li a {
+  color: #fff;
+}
+.header .left ul li a:hover {
+  color: orange;
+}
+.header .left ul li.red {
+  background-color: red;
+}
+.header .right {
+  float: right;
+}
+.header .right p {
+  font-size: 30px;
+  color: #999;
+}
+.header .right p::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+}
+.size,
+.box,
+.box1 {
+  width: 100px;
+  height: 100px;
+}
+.box {
+  background-color: red;
+}
+.box1 {
+  border: 2px solid blue;
+}
+.box2 {
+  width: 500px;
+  height: 200px;
+  border-width: 2px;
+  border-radius: 15px;
+  margin: 100px;
+}
+ul li {
+  width: 160px;
+}
+.box .item {
+  width: 200px;
+}
